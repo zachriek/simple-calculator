@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon_calc/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon_calc/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon_calc/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon_calc/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon_calc/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon_calc/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon_calc/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon_calc/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_calc/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon_calc/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_calc/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon_calc/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_calc/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon_calc/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+	<nav class="nav">
+		<div class="logo">
+			<h4>
+				ZACHRIE
+			</h4>
+		</div>
+
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Product</a></li>
+			<li><a href="">Gallery</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+
+		<div class="menu-toggle">
+			<input type="checkbox">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+
+	<div class="cal-container">
+		<div class="heading">
+			<h1>
+				My Calculator
+			</h1>
+		</div>
+		<div class="cal">
+			<form action="#" name="form">
+				<div class="result">
+					<input class="text" name="disp" id="disp">
+				</div>
+
+				<div class="buttons">
+
+					<div class="row">
+						<input type="button" value="7" name="v7" onclick="val(v7.value)">
+						<input type="button" value="8" name="v8" onclick="val(v8.value)">
+						<input type="button" value="9" name="v9" onclick="val(v9.value)">
+						<input type="button" value="+" name="add" onclick="val(add.value)">
+					</div>
+
+					<div class="row">
+						<input type="button" value="4" name="v4" onclick="val(v4.value)">
+						<input type="button" value="5" name="v5" onclick="val(v5.value)">
+						<input type="button" value="6" name="v6" onclick="val(v6.value)">
+						<input type="button" value="-" name="sub" onclick="val(sub.value)">
+					</div>
+
+					<div class="row">
+						<input type="button" value="1" name="v1" onclick="val(v1.value)">
+						<input type="button" value="2" name="v2" onclick="val(v2.value)">
+						<input type="button" value="3" name="v3" onclick="val(v3.value)">
+						<input type="button" value="*" name="mult" onclick="val(mult.value)">
+					</div>
+
+					<div class="row">
+						<input type="button" value="0" name="v0" onclick="val(v0.value)">
+						<input type="button" value="." name="vdot" onclick="val(vdot.value)">
+						<input type="button" value="/" name="vdiv" onclick="val(vdiv.value)">
+						<input type="button" title="click two times to clear result" value="=" name="equal" onclick="cal()">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
