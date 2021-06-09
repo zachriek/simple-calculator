@@ -1,11 +1,4 @@
-$(window).scroll(function() {
-	let wScroll = $(this).scrollTop();
-
-	$('nav').css({
-		'transform' : 'translate(0px, '+ wScroll * 2 +'%)'
-	});
-});
-
+//  Calculator
 function val(result) {
 	form.disp.value += result;
 }
@@ -23,9 +16,11 @@ btn.addEventListener('dblclick', function() {
 	form.disp.value = "";
 });
 
-const ulNav = document.querySelector('nav.nav ul');
-const menuToggle = document.querySelector('nav.nav .menu-toggle input');
+
+// Navigasi
+const menuUL = document.querySelector('nav.menu-container ul');
+const menuToggle = document.querySelector('nav.menu-container .menu-toggle .toggler');
 
 menuToggle.addEventListener('click', function() {
-	ulNav.classList.toggle('slide');
+	menuUL.classList.toggle('slide');
 });
