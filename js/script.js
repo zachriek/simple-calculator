@@ -15,12 +15,3 @@ let btn = form.equal;
 btn.addEventListener('dblclick', function() {
 	form.disp.value = "";
 });
-
-
-// Navigasi
-const menuUL = document.querySelector('nav.menu-container ul');
-const menuToggle = document.querySelector('nav.menu-container .menu-toggle .toggler');
-
-menuToggle.addEventListener('click', function() {
-	menuUL.classList.toggle('slide');
-});
